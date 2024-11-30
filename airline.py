@@ -19,8 +19,8 @@ class Airline:
 
 #Járatok listázása
 
-    def list_flights(slef):
-        print("Elérhető Járatok: ")
+    def list_flights(self):
+        print("Elérhető járatok:")
         for i, flight in enumerate(self.__flights):
             print(f"{i+1}. {flight}")
 
