@@ -29,7 +29,7 @@ class Airline:
     def book_flight(self):
         self.list_flights()
         try:
-            choice = int(input("Kérem válaszz járat számod: ")) - 1
+            choice = int(input("Kérem válaszz járat számot: ")) - 1
             flight = self.__flights[choice]
             passenger_name = input("Utas neve: : ")
             booking = Booking(passenger_name, flight)
