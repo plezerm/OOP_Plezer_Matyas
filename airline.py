@@ -50,3 +50,16 @@ class Airline:
             print("Foglalás sikeresen törölve lett!")
         except (ValueError, IndexError):
             print("Nincs ilyen foglalás!")
+
+# Járatok listázása
+
+    def list_bookings(self):
+        print("Jelenlegi foglalások:")
+        if self.__bookings:
+            for booking in self.__bookings:
+                print(booking)
+        else:
+            print("Nincsenek foglalások.")   
+
+# name attribútumának értéke
+
