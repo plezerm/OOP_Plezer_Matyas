@@ -45,7 +45,7 @@ class Airline:
         for i, booking in enumerate(self.__bookings):
             print(f"{i+1}. {booking}")
         try:
-            choice = int(input("Choose the booking to cancel (number): ")) - 1
+            choice = int(input("Kérem válassza ki a törölni kívánt foglalást: ")) - 1
             del self.__bookings[choice]
             print("Foglalás sikeresen törölve lett!")
         except (ValueError, IndexError):

@@ -46,11 +46,11 @@ def main():
         elif choice == "b":
             airline.cancel_booking()
         elif choice == "c":
-            airline.list_bookings()
+            airline.list_bookings()  # Ez most már működni fog
         elif choice == "x":
             break
         else:
-            print("Invalid choice!")
+            print("Nem megfelő gomb. Kérem válasszon az A, B, C, vagy X közül!")
 
 if __name__ == "__main__":
     main()

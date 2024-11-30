@@ -19,7 +19,7 @@ class DomesticFlight(Flight):
         super().__init__(flight_number, destination, price)
 
     def __str__(self):
-        return f"Domestic flight {self.flight_number}: {self.destination} - {self.price} Ft"
+        return f"Belföldi Járat {self.flight_number}: {self.destination} - {self.price} Ft"
 
 
 # Nemzetközi Járat
@@ -29,4 +29,4 @@ class InternationalFlight(Flight):
         super().__init__(flight_number, destination, price)
 
     def __str__(self):
-        return f"International flight {self.flight_number}: {self.destination} - {self.price} Ft"
+        return f"Nemzetközi Járat {self.flight_number}: {self.destination} - {self.price} Ft"
