@@ -46,7 +46,7 @@ def main():
         elif choice == "b":
             airline.cancel_booking()
         elif choice == "c":
-            airline.list_bookings()  # Ez most már működni fog
+            airline.list_bookings() 
         elif choice == "x":
             break
         else:
