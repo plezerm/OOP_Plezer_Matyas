@@ -63,3 +63,5 @@ class Airline:
 
 # name attribútumának értéke
 
+    def __str__(self):
+        return f"{self.name} airline"
