@@ -13,7 +13,13 @@ def main()
 
     # Járatok hozzárendelése a légitársasághoz
 
+    airline.add_flight(flight1)
+    airline.add_flight(flight2)
+    airline.add_flight(flight3)
+
     # Foglalások létrehozása
+
+
 
     # Foglalások hozzáadása 
     
