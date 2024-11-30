@@ -16,3 +16,11 @@ class Airline:
 
     def add_booking(self, booking):
         self.__bookings.append(booking)
+
+#Járatok listázása
+
+    def list_flights(slef):
+        print("Elérhető Járatok: ")
+        for i, flight in enumerate(self.__flights):
+            print(f"{i+1}. {flight}")
+
