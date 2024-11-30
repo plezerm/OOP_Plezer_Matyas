@@ -26,7 +26,7 @@ class Airline:
 
 #Járat foglalása
 
-def book_flight(self):
+    def book_flight(self):
         self.list_flights()
         try:
             choice = int(input("Kérem válaszz járat számod: ")) - 1
@@ -38,3 +38,15 @@ def book_flight(self):
         except (ValueError, IndexError):
             print("Nincs ilyen járat! ")
 
+#Járat törlése
+
+    def cancel_booking(self):
+        print("Jelenlegi foglalások:")
+        for i, booking in enumerate(self.__bookings):
+            print(f"{i+1}. {booking}")
+        try:
+            choice = int(input("Choose the booking to cancel (number): ")) - 1
+            del self.__bookings[choice]
+            print("Foglalás sikeresen törölve lett!")
+        except (ValueError, IndexError):
+            print("Nincs ilyen foglalás!")
