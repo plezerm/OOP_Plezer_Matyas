@@ -12,14 +12,23 @@ def main()
     flight3 = InternationalFlight("M9 999", "Pozsony", 35000)
 
     # Járatok hozzárendelése a légitársasághoz
-
     airline.add_flight(flight1)
     airline.add_flight(flight2)
     airline.add_flight(flight3)
 
     # Foglalások létrehozása
-
+    booking1 = Booking("Minta Károly", flight1)
+    booking2 = Booking("Példa József", flight2)
+    booking3 = Booking("Ismert Kata", flight3)
+    booking4 = Booking("Kiss András", flight1)
+    booking5 = Booking("Senki Bercel", flight2)
+    booking6 = Booking("Minden Elemér", flight3)
 
 
     # Foglalások hozzáadása 
-    
+    airline.add_booking(booking1)
+    airline.add_booking(booking2)
+    airline.add_booking(booking3)
+    airline.add_booking(booking4)
+    airline.add_booking(booking5)
+    airline.add_booking(booking6)
